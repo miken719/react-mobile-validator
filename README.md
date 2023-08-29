@@ -73,6 +73,6 @@ export default MobileInput;
 
 With **react-mobile-validator**, you can seamlessly integrate mobile number validation into your React applications, ensuring that users provide correctly formatted mobile numbers for their respective countries. This package simplifies the validation process and enhances the overall user experience of your application's forms and input interfaces.
 
-Feel free to explore the package's functions and customize them according to your application's needs. For more information, refer to the [GitHub repository](https://github.com/your-username/react-mobile-validator) of the project.
+Feel free to explore the package's functions and customize them according to your application's needs. For more information, refer to the [GitHub repository](https://github.com/mikenindianic/react-mobile-validator) of the project.
 
 If you encounter any issues or have suggestions for improvements, please don't hesitate to contribute by submitting issues or pull requests to the repository. Happy coding! 🚀
