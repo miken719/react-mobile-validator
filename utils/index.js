@@ -91,5 +91,10 @@ const phonesRegex = {
 
 const INVALID_CODE = "Invalid country code";
 const REQUIRED_CODE = "Please provide country code";
-
-module.exports = { phonesRegex, INVALID_CODE, REQUIRED_CODE };
+const REQUIRED_MOBILE_NUMBER = "Please provide mobile number";
+module.exports = {
+  phonesRegex,
+  INVALID_CODE,
+  REQUIRED_CODE,
+  REQUIRED_MOBILE_NUMBER,
+};

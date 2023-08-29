@@ -31,7 +31,7 @@ import validateMobileNumber from "react-mobile-validator";
 2. **Validate a mobile number:**
 
 ```javascript
-const isValid = new RegExp(validateNumber("IN")).test("123456");
+const isValidNumber = validateMobileNumber(countryCode, newNumber);
 console.log(isValid); // true or false
 ```
 
@@ -43,30 +43,52 @@ Here's a basic example of integrating **react-mobile-validator** into a React co
 
 ```javascript
 import React, { useState } from "react";
-import { validateMobileNumber } from "react-mobile-validator";
-
-function MobileInput() {
+import validateMobileNumber from "react-mobile-validator";
+import countryCodeList from "./countryCodes.json";
+function App() {
   const [mobileNumber, setMobileNumber] = useState("");
+  const [countryCode, setCountryCode] = useState("");
   const [isValid, setIsValid] = useState(false);
-
   const handleInputChange = (event) => {
     const newNumber = event.target.value;
     setMobileNumber(newNumber);
-
-    const countryCode = "US"; // Set the appropriate country code here
-    const isValidNumber = new RegExp(validateNumber("IN")).test("123456");
-    setIsValid(isValidNumber);
+    const isValidNumber = validateMobileNumber(countryCode, newNumber);
+    if (isValidNumber) {
+      setIsValid(true);
+    } else {
+      setIsValid(false);
+    }
   };
-
   return (
     <div>
-      <input type="text" value={mobileNumber} onChange={handleInputChange} />
+      <label htmlFor="country">Choose a country:</label>
+      <select
+        id="country"
+        name="countryName"
+        onChange={(e) => setCountryCode(e.target.value)}
+      >
+        {Object.values(countryCodeList)?.map((country) => {
+          return (
+            <option key={country.iso2} value={country.iso2}>
+              {country.name}
+            </option>
+          );
+        })}
+      </select>
+      <label htmlFor="mobile">Enter MobileNumber:</label>
+      <input
+        type="text"
+        id="mobile"
+        name="mobileName"
+        value={mobileNumber}
+        onChange={handleInputChange}
+      />
       <p>{isValid ? "Valid" : "Invalid"} mobile number</p>
     </div>
   );
 }
 
-export default MobileInput;
+export default App;
 ```
 
 ## Conclusion

@@ -1,3 +1,3 @@
 const helloNpm = require("mobile-validator");
 
-helloNpm("IN");
+console.log(helloNpm("IN", "2277558899"));
