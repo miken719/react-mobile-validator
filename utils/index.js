@@ -1,3 +1,7 @@
+/******************* 
+  @Purpose : Regex for multi countries
+  @Author : Miken
+  ******************/
 const phonesRegex = {
   AM: /^(\+?374|0)((10|[9|7][0-9])\d{6}$|[2-4]\d{7}$)/,
   AE: /^((\+?971)|0)?5[024568]\d{7}$/,
@@ -89,12 +93,21 @@ const phonesRegex = {
   HT: /^(\+?509[-\s]?)?[3456789]\d{4}[-\s]?\d{3}$/,
 };
 
+/******************* 
+  @Purpose : Error Messages
+  @Author : Miken
+  ******************/
 const INVALID_CODE = "Invalid country code";
 const REQUIRED_CODE = "Please provide country code";
 const REQUIRED_MOBILE_NUMBER = "Please provide mobile number";
+const COUNTRY_TYPE_VALIDATION = "Countrycode must be in string";
+const MOBILE_TYPE_VALIDATION = "Mobile number must be in string";
+
 module.exports = {
   phonesRegex,
   INVALID_CODE,
   REQUIRED_CODE,
   REQUIRED_MOBILE_NUMBER,
+  COUNTRY_TYPE_VALIDATION,
+  MOBILE_TYPE_VALIDATION,
 };
