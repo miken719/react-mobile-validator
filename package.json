@@ -1,6 +1,6 @@
 {
   "name": "react-mobile-validator",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This package use for validate mobile",
   "main": "index.js",
   "scripts": {
