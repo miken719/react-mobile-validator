@@ -51,6 +51,10 @@ function App() {
   const [mobileNumber, setMobileNumber] = useState("");
   const [countryCode, setCountryCode] = useState("");
   const [isValid, setIsValid] = useState(false);
+  /******************* 
+  @Purpose : handleInputChange
+  @Author : react-mobile-validator
+  ******************/
   const handleInputChange = (event) => {
     const newNumber = event.target.value;
     setMobileNumber(newNumber);
