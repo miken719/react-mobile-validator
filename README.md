@@ -32,6 +32,8 @@ import validateMobileNumber from "react-mobile-validator";
 
 ```javascript
 const isValidNumber = validateMobileNumber(countryCode, newNumber);
+//e.g countryCode = "IN";  newNumber = "885XXXXXXX";
+
 console.log(isValid); // true or false
 ```
 

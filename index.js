@@ -9,7 +9,7 @@ const {
 /******************* 
   @Purpose : Validate Mobile number with countrycode
   @Parameter : code, mobileNumber
-  @Author : Miken
+  @Author : react-mobile-validator
   ******************/
 function validateNumber(code, mobileNumber) {
   if (typeof code !== "string") {

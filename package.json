@@ -1,11 +1,29 @@
 {
   "name": "react-mobile-validator",
   "version": "1.1.0",
-  "description": "This package use for validate mobile",
+  "description": "A comprehensive mobile number validation library for React applications.",
+  "keywords": [
+    "react",
+    "mobile",
+    "validation",
+    "phone number",
+    "input validation"
+  ],
+  "homepage": "https://github.com/mikenindianic/react-mobile-validator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikenindianic/react-mobile-validator"
+  },
   "main": "index.js",
   "scripts": {
     "test": "npm run test"
   },
-  "author": "miken",
+  "author": "Miken Prajapati",
+  "maintainers": [
+    {
+      "name": "Miken Prajapati",
+      "email": "mikenprajapati719@gmail.com"
+    }
+  ],
   "license": "MIT"
 }

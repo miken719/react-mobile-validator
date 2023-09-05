@@ -1,6 +1,6 @@
 /******************* 
   @Purpose : Regex for multi countries
-  @Author : Miken
+  @Author : react-mobile-validator
   ******************/
 const phonesRegex = {
   AM: /^(\+?374|0)((10|[9|7][0-9])\d{6}$|[2-4]\d{7}$)/,
@@ -95,7 +95,7 @@ const phonesRegex = {
 
 /******************* 
   @Purpose : Error Messages
-  @Author : Miken
+  @Author : react-mobile-validator
   ******************/
 const INVALID_CODE = "Invalid country code";
 const REQUIRED_CODE = "Please provide country code";
