@@ -1,10 +1,10 @@
 const validateNumber = require("react-mobile-validator");
 const countryCode = "IN";
-const mobileNumber = "8854222533";
+const mobileNumber = "8811122232";
 /******************* 
   @Purpose : Validate Mobile number with countrycode
   @Parameter : countryCode, mobileNumber
-  @Author : Miken
+  @Author : react-mobile-validator
   ******************/
 const isValid = validateNumber(countryCode, mobileNumber);
 
